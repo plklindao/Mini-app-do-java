@@ -2,8 +2,7 @@ import { StyleSheet, Text, View, StatusBar, Button } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-
-import Pagina2 from './pagina2';
+import Pagina2 from './pagina2'; // IMPORTA SUA PÁGINA
 
 const Stack = createNativeStackNavigator();
 
@@ -26,14 +25,13 @@ function HomeScreen({ navigation }) {
       <StatusBar barStyle="light-content" backgroundColor="#1e697c" />
       <Text style={styles.welcomeText}>Bem vindo ao seu app!</Text>
 
-      <Button
+      <Button 
         title="Ir para Página 2"
         onPress={() => navigation.navigate("Pagina2")}
       />
     </View>
   );
 }
-
 
 const styles = StyleSheet.create({
   container: {
@@ -46,10 +44,9 @@ const styles = StyleSheet.create({
 
   welcomeText: {
     fontSize: 24,
-    paddingBottom: 850,
+    paddingBottom: 50,
     fontWeight: 'bold',
     color: '#000000ff',
     textAlign: 'center',
   },
 });
-
