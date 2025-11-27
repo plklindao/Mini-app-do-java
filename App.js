@@ -1,29 +1,37 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, StatusBar } from 'react-native';
+
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text style={style.welcomeText}>Bem vindo a seu app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+return (
+
+<View style={styles.container}>
+<StatusBar barStyle="light-content" backgroundColor="#1e697c" />
+<Text style={styles.welcomeText}>Bem vindo ao seu app!</Text>
+</View>
+);
+}
+
+export default function Botão(){
+  return(
+    
+  )
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#cec6c6ff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+container: {
+flex: 1,
+backgroundColor: '#c4c4c4ff',
+justifyContent: 'center',
+alignItems: 'center',
+paddingHorizontal: 30,
+},
 
-  welcomeText:{
-    fontSize: 24,
-    paddingBottom: 850,
-    fontWeight: 'bold',
-    color: '#000000ff',
-    textAlign: 'center',
-
-  }
+welcomeText: {
+fontSize: 24,
+paddingBottom: 850,
+fontWeight: 'bold',
+color: '#000000ff',
+textAlign: 'center',
+},
 });
+
